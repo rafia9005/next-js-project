@@ -7,6 +7,7 @@ import {
   XMarkIcon,
 } from "@heroicons/react/24/outline";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 export default function NavbarLayout() {
   const [toggleMenu, setToggleMenu] = useState(false);
@@ -26,7 +27,7 @@ export default function NavbarLayout() {
               className="flex items-center gap-[20px]"
             >
               <div>
-                <img src="/profile.jpg" className="w-[40px] rounded-full" />
+                <Image alt="" src="/profile.jpg" className="w-[40px] rounded-full" />
               </div>
               <span className="text-3xl font-bold">r dev</span>
             </motion.div>

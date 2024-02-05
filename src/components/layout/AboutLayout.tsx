@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 export default function AboutLayout() {
   return (
@@ -43,16 +44,13 @@ export default function AboutLayout() {
             </p>
           </motion.div>
         </div>
-        <div>
-          <motion.img
-            transition={{ duration: 0.5 }}
-            whileInView={{ scale: 2.2 }}
-            animate={{ scale: 0 }}
-            src="./profile.jpg"
-            alt="ahmad rafi profile"
-            className="w-[300px] rounded-md"
-          />
-        </div>
+        <motion.div
+          transition={{ duration: 0.5 }}
+          whileInView={{ scale: 2.2 }}
+          animate={{ scale: 0 }}
+        >
+          <Image src="./profile.jpg" alt="" className="w-[300px] rounded-md" />
+        </motion.div>
       </div>
     </>
   );
