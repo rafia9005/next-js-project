@@ -33,8 +33,10 @@ const LoaderComponent = (props: any) => {
                   restDelta: 0.001,
                 },
               }}
-              className="bg-white w-[70px] h-[70px] rounded-full"
-            ></motion.div>
+              className="w-[70px] h-[70px] rounded-full"
+            >
+              <img src="./profile.jpg" alt="" />
+            </motion.div>
           </div>
         </div>
       ) : (

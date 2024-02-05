@@ -4,6 +4,15 @@ import Link from "next/link";
 export default function HeroLayout() {
   return (
     <>
+      <div className="relative">
+        <div
+          aria-hidden="true"
+          className="absolute inset-0 grid grid-cols-2 -space-x-52 opacity-40 dark:opacity-20"
+        >
+          <div className=""></div>
+          <div className="blur-[106px] h-[200px] w-[900px] bg-gradient-to-r from-purple-900 to-black"></div>
+        </div>
+      </div>
       <div className="flex justify-between items-center h-screen text-white">
         <div className="text-start mx-[100px]">
           <motion.h1
@@ -12,7 +21,7 @@ export default function HeroLayout() {
             transition={{ duration: 0.4 }}
             className="text-[180px] font-bold"
           >
-            Ahmad Rafi
+            Ahmad Rafi.
           </motion.h1>
           <div>
             <motion.p
